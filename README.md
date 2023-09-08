@@ -4,23 +4,30 @@ This project is a sentiment analysis model that uses deep learning techniques to
 
 ## Project Overview
 
-Sentiment analysis, also known as opinion mining, is a natural language processing (NLP) technique that determines the sentiment or emotion expressed in text data. In this project, we've built a deep-learning model to classify movie reviews as positive or negative.
+Sentiment analysis, also known as opinion mining, is a natural language processing (NLP) technique that determines the sentiment or emotion expressed in text data. In this project, I've built a deep-learning model to classify movie reviews as positive or negative.
 
 ## Dataset
 
 The dataset used in this project is the [IMDB Movie Reviews dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) from Kaggle. It consists of 50,000 movie reviews labeled as "positive" or "negative."
 
+## Model Architecture
+
+- Word Embedding: GloVe word embeddings are utilized to convert words into numerical vectors.
+- LSTM Layers: Long Short-Term Memory (LSTM) layers capture sequential dependencies in the text data.
+- Spatial Dropout: SpatialDropout1D is applied to prevent overfitting.
+- Dense Layer: A fully connected layer with sigmoid activation produces sentiment predictions.
+
 ## Project Components
 
-1. **Data Preprocessing**: We cleaned and preprocessed the text data, including removing duplicates and encoding labels.
+1. **Data Preprocessing**: I cleaned and preprocessed the text data, including removing duplicates and encoding labels.
 
-2. **Word Embeddings**: We used pre-trained word embeddings (GloVe) to convert words into numerical vectors to capture semantic meanings.
+2. **Word Embeddings**: I used pre-trained word embeddings (GloVe) to convert words into numerical vectors to capture semantic meanings.
 
-3. **Deep Learning Model**: We built a deep learning model with an embedding layer, LSTM layer, and dense layer for sentiment classification.
+3. **Deep Learning Model**: I built a deep learning model with an embedding layer, LSTM layer, and dense layer for sentiment classification.
 
 4. **Training**: The model was trained on a portion of the dataset and evaluated on a test set.
 
-5. **Inference**: We provided examples of how to use the trained model to predict sentiment on new movie reviews.
+5. **Inference**: I provided examples of how to use the trained model to predict sentiment on new movie reviews.
 
 ## Dependencies
 
@@ -32,7 +39,7 @@ Make sure you have the following Python libraries installed:
 
 ## Usage
 
-- You can train the model by running the provided Jupyter Notebook or Python script.
+- You can train the model by running the provided or Python script.
 - To use the model for prediction, follow the example provided in the script, where you can input your own movie reviews.
 
 ## Model Saving
